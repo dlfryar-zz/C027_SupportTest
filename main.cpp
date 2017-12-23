@@ -226,7 +226,8 @@ int main(void)
                         {
                             printf("GPS Location: %.5f %.5f\r\n", la, lo); 
                             sprintf(link, "I am here!\n"
-                                          "https://maps.google.com/?q=%.5f,%.5f", la, lo); 
+                                          "https://maps.google.com/?q=%.5f,%.5f", la, lo);
+                            printf("I am here: https://maps.google.com/?q=%.5f,%.5f\n\n", la, lo);
                         }
                     } else if (_CHECK_TALKER("GGA") || _CHECK_TALKER("GNS") ) {
                         double a = 0; 
